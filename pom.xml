@@ -9,6 +9,30 @@
     <artifactId>boraheeb-ansi</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <name>BoRaheeb ANSI</name>
+    <description>
+        Lightweight, dependency-free Java 8+ utilities for ANSI SGR terminal text styling, color generation, and color conversion.
+    </description>
+    <url>https://github.com/BoRaheeb/boraheeb-ansi</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>BoRaheeb</id>
+            <name>BoRaheeb</name>
+            <url>https://github.com/BoRaheeb</url>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:https://github.com/BoRaheeb/boraheeb-ansi.git</connection>
+        <developerConnection>scm:git:https://github.com/BoRaheeb/boraheeb-ansi.git</developerConnection>
+        <url>https://github.com/BoRaheeb/boraheeb-ansi</url>
+    </scm>
     <properties>
         <maven.compiler.release>8</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,7 +89,7 @@
                     </sourceFileIncludes>
                     <doctitle>BoRaheeb ANSI</doctitle>
                     <windowtitle>BoRaheeb ANSI</windowtitle>
-                    <!-- JDK 25's default CSS imports the bundled font stylesheet. -->
+                    <!-- Preserve the existing fonts setting. -->
                     <disableNoFonts>true</disableNoFonts>
                     <!-- The report goal appends /apidocs to this directory. -->
                     <outputDirectory>${project.build.directory}/site</outputDirectory>
