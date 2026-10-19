@@ -1,0 +1,26 @@
+# Maven-generated build outputs
+/target/
+
+# Compiled Java artifacts outside Maven's target directory
+*.class
+
+# IDE-local state (retain .settings/*.prefs and .editorconfig)
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.factorypath
+.metadata/
+
+# Java crash dumps and diagnostics
+hs_err_pid*
+replay_pid*
+*.hprof
+*.jfr
+
+# Local logs and OS metadata
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
