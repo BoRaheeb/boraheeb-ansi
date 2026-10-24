@@ -3,11 +3,32 @@
 * Loaded after the generated stylesheet.css via --add-stylesheet,
 * so these :root overrides win without touching layout rules.
 */
+@font-face{
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('resources/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('resources/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url('resources/fonts/JetBrainsMono-Italic.ttf') format('truetype');
+}
 :root{
-    /* Consistent font across body, block, and code. */
-    --body-font-family: Consolas, 'Courier New', monospace;
-    --block-font-family: Consolas, 'Courier New', monospace;
-    --code-font-family: Consolas, 'Courier New', monospace;
+    /* Bundled JetBrains Mono 2.304 (SIL OFL 1.1) across body, block, and code. */
+    --body-font-family: 'JetBrains Mono', monospace;
+    --block-font-family: 'JetBrains Mono', monospace;
+    --code-font-family: 'JetBrains Mono', monospace;
     --body-background-color:#282a36; --section-background-color:#343746; --detail-background-color:#282a36;
     --body-text-color:#f8f8f2; --block-text-color:#f8f8f2; --title-color:#bd93f9;
     --navbar-background-color:#44475a; --navbar-text-color:#f8f8f2; --subnav-background-color:#3c3f51;

@@ -93,8 +93,9 @@
                     <disableNoFonts>true</disableNoFonts>
                     <!-- The report goal appends /apidocs to this directory. -->
                     <outputDirectory>${project.build.directory}/site</outputDirectory>
-                    <!-- Keep the owner's stylesheet authoritative in the project root. -->
-                    <javadocDirectory>${project.basedir}</javadocDirectory>
+                    <!-- Theme stylesheet and bundled font assets live in javadoc-theme/. -->
+                    <javadocDirectory>${project.basedir}/javadoc-theme</javadocDirectory>
+                    <docfilessubdirs>true</docfilessubdirs>
                     <addStylesheets>
                         <addStylesheet>theme-dracula.css</addStylesheet>
                     </addStylesheets>

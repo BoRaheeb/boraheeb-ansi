@@ -131,7 +131,9 @@ mvn javadoc:javadoc
 mvn javadoc:jar
 ```
 
-Open `target/site/apidocs/index.html` in a browser. The active Dracula theme loads the root `theme-dracula.css` after the standard Javadoc `stylesheet.css`; both are present in the JDK 21 output at `target/site/apidocs/`.
+Open `target/site/apidocs/index.html` in a browser. The documentation uses the JDK 21 Standard Doclet layout, and **Dracula** is the active visual theme: `javadoc-theme/theme-dracula.css` is loaded after the standard Javadoc `stylesheet.css`, and both are present in the output at `target/site/apidocs/`.
+
+The Javadoc bundles **JetBrains Mono 2.304** (Regular, Bold, and Italic TrueType files in `javadoc-theme/resources/fonts/`), so no locally installed Consolas or JetBrains Mono font is required, and the pages can be viewed offline with their included assets. JetBrains Mono is a third-party font licensed under the **SIL Open Font License 1.1** (`OFL.txt` and `AUTHORS.txt` ship with the fonts); the BoRaheeb ANSI library itself remains **MIT-licensed**. The font files are included only in documentation artifacts (`target/site/apidocs/` and the Javadoc JAR), never in the production runtime JAR.
 
 The library remains **Java 8 compatible** through `--release 8`. The JDK used to generate documentation does not determine the library's minimum runtime Java version.
 
