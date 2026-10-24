@@ -27,8 +27,6 @@ Some underline styles and underline colors are terminal-dependent extensions. Th
 
 ## Installation
 
-The project currently uses the development version **`1.0.0-SNAPSHOT`**. It is **not yet published to Maven Central**.
-
 Build and install the library into your local Maven repository:
 
 ```sh
@@ -41,16 +39,19 @@ Then add this dependency to another Maven project's `pom.xml`:
 <dependency>
     <groupId>com.boraheeb</groupId>
     <artifactId>boraheeb-ansi</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
-This works after local installation. Update the version when an official release is published.
+This works after local installation. Version `1.0.0` has not yet
+been published to Maven Central. Once published, the same
+dependency can be resolved directly from Maven Central without
+requiring local installation.
 
 Alternatively, build the JAR with `mvn clean package` and find it at:
 
 ```text
-target/boraheeb-ansi-1.0.0-SNAPSHOT.jar
+target/boraheeb-ansi-1.0.0.jar
 ```
 
 ## Quick start
@@ -114,7 +115,9 @@ Invalid color inputs do not throw an exception: the relevant method emits a warn
 
 ## Build and testing
 
-Requirements for building: **Maven** and a full **JDK 8 or newer**. The Maven configuration targets Java 8.
+The v1.0.0 release build (`mvn clean verify -Prelease`) passed all
+714 JUnit 5 tests on BellSoft JDK 21.0.11 with Maven 3.9.16
+(Windows), with no failures, errors, or skipped tests.
 
 ```sh
 mvn clean verify

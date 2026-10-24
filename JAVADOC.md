@@ -26,7 +26,7 @@ Open `target/site/apidocs/index.html` in a browser. The public API page is
 directory when sharing it so its local styles, scripts, and icons stay together.
 
 The separate archive is
-`target/boraheeb-ansi-1.0.0-SNAPSHOT-javadoc.jar`. Extract it and open its
+`target/boraheeb-ansi-1.0.0-javadoc.jar`. Extract it and open its
 `index.html` to browse it. Documentation is not included in the production JAR.
 `mvn clean` removes generated documentation. The Javadoc JAR is bound to the
 `package` phase, so `mvn clean verify` also builds it; `mvn javadoc:javadoc`
@@ -117,8 +117,8 @@ the bundled JetBrains Mono files declared in `theme-dracula.css`.
 After `mvn clean verify`, check the bundled assets:
 
 ```sh
-jar tf target/boraheeb-ansi-1.0.0-SNAPSHOT-javadoc.jar
-jar tf target/boraheeb-ansi-1.0.0-SNAPSHOT.jar
+jar tf target/boraheeb-ansi-1.0.0-javadoc.jar
+jar tf target/boraheeb-ansi-1.0.0.jar
 ```
 
 The Javadoc JAR listing must include `theme-dracula.css` and
