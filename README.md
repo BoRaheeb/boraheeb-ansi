@@ -1,3 +1,10 @@
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="branding/logo-dark.svg">
+        <img src="branding/logo-light.svg" alt="BoRaheeb ANSI" width="360">
+    </picture>
+</p>
+
 # BoRaheeb ANSI
 
 **BoRaheeb ANSI** is a lightweight, dependency-free Java library for generating ANSI SGR (Select Graphic Rendition)
