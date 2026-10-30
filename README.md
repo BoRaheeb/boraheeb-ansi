@@ -7,6 +7,25 @@
 
 # BoRaheeb ANSI
 
+<p align="center">
+    <a href="https://central.sonatype.com/artifact/com.boraheeb/boraheeb-ansi">
+        <img
+            src="https://img.shields.io/maven-central/v/com.boraheeb/boraheeb-ansi?style=flat-square&label=Maven%20Central&color=BD93F9"
+            alt="Maven Central"
+        >
+    </a>
+    <img
+        src="https://img.shields.io/badge/Java-8%2B-50FA7B?style=flat-square"
+        alt="Java 8+"
+    >
+    <a href="https://github.com/BoRaheeb/boraheeb-ansi/blob/main/LICENSE">
+        <img
+            src="https://img.shields.io/github/license/BoRaheeb/boraheeb-ansi?style=flat-square&color=8BE9FD"
+            alt="License"
+        >
+    </a>
+</p>
+
 **BoRaheeb ANSI** is a lightweight, dependency-free Java library for generating ANSI SGR (Select Graphic Rendition)
 escape sequences and working with terminal text colors and styles.
 
