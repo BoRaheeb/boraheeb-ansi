@@ -34,13 +34,7 @@ Some underline styles and underline colors are terminal-dependent extensions. Th
 
 ## Installation
 
-Build and install the library into your local Maven repository:
-
-```sh
-mvn clean install
-```
-
-Then add this dependency to another Maven project's `pom.xml`:
+BoRaheeb ANSI is available on Maven Central. Add the following dependency to your project's `pom.xml`:
 
 ```xml
 <dependency>
@@ -50,12 +44,19 @@ Then add this dependency to another Maven project's `pom.xml`:
 </dependency>
 ```
 
-This works after local installation. Version `1.0.0` has not yet
-been published to Maven Central. Once published, the same
-dependency can be resolved directly from Maven Central without
-requiring local installation.
+Alternatively, build and install the library into your local Maven repository:
 
-Alternatively, build the JAR with `mvn clean package` and find it at:
+```sh
+mvn clean install
+```
+
+To build the JAR without installing it:
+
+```sh
+mvn clean package
+```
+
+The resulting JAR is located at:
 
 ```text
 target/boraheeb-ansi-1.0.0.jar
