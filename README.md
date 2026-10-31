@@ -169,6 +169,10 @@ The library remains **Java 8 compatible** through `--release 8`. The JDK used to
 
 For the workflow, source-discovery compatibility fix, and known generated-resource limitation, see [JAVADOC.md](JAVADOC.md).
 
+## Release history
+
+See [RELEASES.md](RELEASES.md) for the history of public releases, including release dates, artifacts, and provenance notes.
+
 ## License
 
 MIT License — see [LICENSE](LICENSE).
