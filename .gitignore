@@ -1,5 +1,15 @@
+# Not a security mechanism: never commit credentials, tokens, private keys,
+# or passphrases, even though some common names are listed below.
+
 # Maven-generated build outputs
 /target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
 
 # Compiled Java artifacts outside Maven's target directory
 *.class
@@ -8,10 +18,17 @@
 .vscode/
 .idea/
 *.iml
+*.ipr
+*.iws
+/out/
 .classpath
 .project
 .factorypath
+/bin/
 .metadata/
+nbproject/private/
+nbbuild/
+nbdist/
 
 # Java crash dumps and diagnostics
 hs_err_pid*
@@ -19,8 +36,23 @@ replay_pid*
 *.hprof
 *.jfr
 
-# Local logs and OS metadata
+# Local logs, temporary files, and OS metadata
 *.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+
+# Local secrets and environment files
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore

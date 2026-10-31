@@ -68,3 +68,29 @@ and `AUTHORS.txt` there).
   `logo-dark.svg`; when the background is unknown use `logo.svg`.
 - Maven Central and MVNRepository do not read logos from a POM, so these
   assets will not appear on those sites automatically.
+
+## License
+
+The branding assets and the library source code are licensed separately. The
+branding assets do not inherit the source code license.
+
+**Branding assets.** The BoRaheeb logos, icons, social preview, and distinctive
+visual identity in this folder are © BoRaheeb. All rights reserved.
+
+- They must not be reused to represent, brand, or imply official endorsement of
+  another project or product without prior permission from BoRaheeb.
+- Ordinary identification of BoRaheeb ANSI, and other uses permitted by
+  applicable law, are not prohibited by this policy.
+- This restriction applies only to BoRaheeb-owned branding assets. It does not
+  apply to the library source code or to third-party assets.
+
+**Source code.** The BoRaheeb ANSI library is licensed under the MIT License
+(see the root [`LICENSE`](../LICENSE)). You may use, copy, modify, redistribute,
+sublicense, and commercially use the library, including in proprietary
+applications, subject to the MIT terms. The branding terms above place no
+additional restriction on the source code.
+
+**Third-party fonts.** JetBrains Mono remains licensed under the SIL Open Font
+License 1.1. Its `OFL.txt` and `AUTHORS.txt` are kept unchanged in
+`javadoc-theme/resources/fonts/`, and the branding terms above do not replace or
+override them.
